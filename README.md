@@ -1,6 +1,6 @@
 # 027-Apple-Watch-App-Color-Game
 
-![][] **Description**: a color game made for Apple Watch.[Source Code][]
+![][] **Description**: a color game made for Apple Watch.
 **Features**:
 
 -   Easy to play color game, just choose the right matching colors and
@@ -24,7 +24,6 @@ align=“aligncenter” width=“312”][![beautiful\_loading\_screen][]][]
 Beautiful Loading Screen[/caption]
 
 []: https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game/blob/master/_snapshot/snapshot.gif?raw=true
-[Source Code]: https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game
 [screenshot]: http://audreyli.me/wp-content/uploads/2015/05/screenshot.png
 [beautiful\_loading\_screen]: http://audreyli.me/wp-content/uploads/2015/05/beautiful_loading_screen.png
 "Beautiful Loading Screen"
