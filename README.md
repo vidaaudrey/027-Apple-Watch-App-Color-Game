@@ -2,7 +2,7 @@
 
 **Description**: a color game made for Apple Watch.
 
-![Swift Snapshot](https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game/blob/master/_snapshot/snapshot.gif?raw=true)
+![Swift Snapshot](https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game/blob/master/_snapshot/snapshot1.gif)
 **Features**:
 
 -   Easy to play color game, just choose the right matching colors and
