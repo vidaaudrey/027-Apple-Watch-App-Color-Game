@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Color-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Color" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Play" id="yZK-0W-aLO">
+                            <color key="backgroundColor" red="0.88235294819999999" green="0.20000000300000001" blue="0.16078431900000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="40"/>
+                            <connections>
+                                <segue destination="kkr-Tp-qO8" kind="push" id="t16-wG-dC2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="playBtn" destination="yZK-0W-aLO" id="eHK-JJ-hCo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--GameInterfaceController-->
+        <scene sceneID="sGv-K7-uXY">
+            <objects>
+                <controller identifier="GameInterfaceController" id="kkr-Tp-qO8" customClass="GameInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="center" verticalAlignment="center" title="Play Again" id="IBm-Lk-pBe">
+                            <color key="backgroundColor" red="0.88235294819999999" green="0.20000000300000001" blue="0.16078431900000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                            <connections>
+                                <action selector="playAgainBtnPressed" destination="kkr-Tp-qO8" id="vxc-Dl-Jn7"/>
+                            </connections>
+                        </button>
+                        <label width="133" height="77" alignment="left" text="Score" id="NAX-iU-vta"/>
+                        <button width="1" alignment="left" title="All My Scores" id="S1a-gK-tW1">
+                            <connections>
+                                <segue destination="asw-g5-IVu" kind="push" id="Mwo-ee-QzX"/>
+                            </connections>
+                        </button>
+                        <timer alignment="center" previewedSeconds="30" id="F0u-9f-v9S">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                            <calendarUnit key="units" minute="YES" second="YES"/>
+                        </timer>
+                        <group width="1" alignment="left" id="rx7-uS-NWZ">
+                            <items>
+                                <label alignment="left" verticalAlignment="center" text="Taget Color  " id="pSm-OI-cZO">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                                <button width="34" height="30" alignment="center" id="kRE-WJ-wyA">
+                                    <color key="backgroundColor" red="0.98431378599999997" green="0.70588237050000002" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="a1G-Yo-yrc">
+                            <items>
+                                <button width="0.46999999999999997" height="45" alignment="left" id="aSc-iB-hNt">
+                                    <color key="backgroundColor" red="0.87843137979999997" green="0.41568627949999998" blue="0.039215687659999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                    <connections>
+                                        <action selector="color1Pressed" destination="kkr-Tp-qO8" id="QPi-4M-pwV"/>
+                                    </connections>
+                                </button>
+                                <button width="0.46999999999999997" height="45" alignment="right" id="aXi-EM-nNM">
+                                    <color key="backgroundColor" red="0.1176470593" green="0.64313727620000005" blue="0.2941176593" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                    <connections>
+                                        <action selector="color2Pressed" destination="kkr-Tp-qO8" id="ORB-st-dqD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="mr1-fd-ILb">
+                            <items>
+                                <button width="0.46999999999999997" height="45" alignment="left" id="D0U-wm-UNF">
+                                    <color key="backgroundColor" red="0.53725492949999998" green="0.23529411850000001" blue="0.66274511810000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                    <connections>
+                                        <action selector="color3Pressed" destination="kkr-Tp-qO8" id="CNK-Ph-krR"/>
+                                    </connections>
+                                </button>
+                                <button width="0.46999999999999997" height="45" alignment="right" id="gr5-ju-ObB">
+                                    <color key="backgroundColor" red="0.88235294819999999" green="0.20000000300000001" blue="0.16078431900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                    <connections>
+                                        <action selector="color4Pressed" destination="kkr-Tp-qO8" id="01K-n2-DlD"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label alignment="center" id="SZK-k0-ddD" userLabel="correctLabel">
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                    </items>
+                    <menu key="menu" id="Bfh-rg-LxU">
+                        <items>
+                            <menuItem title="Stop" icon="trash" id="bdV-Ex-lfD">
+                                <connections>
+                                    <action selector="stopMenuPressed" destination="kkr-Tp-qO8" id="2hj-Is-FDn"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Setting" icon="more" id="lFB-nR-JMl" userLabel="Setting">
+                                <connections>
+                                    <action selector="settingMenuPressed" destination="kkr-Tp-qO8" id="25e-P2-byd"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="My Scores" icon="info" id="bE4-oQ-kI8" userLabel="Score">
+                                <connections>
+                                    <action selector="scoreMenuPressed" destination="kkr-Tp-qO8" id="9gE-k2-iVZ"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="allMyScoresBtn" destination="S1a-gK-tW1" id="fJ6-fa-8Tq"/>
+                        <outlet property="color1" destination="aSc-iB-hNt" id="mI6-H9-MpJ"/>
+                        <outlet property="color2" destination="aXi-EM-nNM" id="9Jr-UC-r5V"/>
+                        <outlet property="color3" destination="D0U-wm-UNF" id="bLr-5t-6N6"/>
+                        <outlet property="color4" destination="gr5-ju-ObB" id="0VW-6M-xkE"/>
+                        <outlet property="correctLabel" destination="SZK-k0-ddD" id="6Ef-Xc-qLD"/>
+                        <outlet property="playAgainBtn" destination="IBm-Lk-pBe" id="HAw-tU-Tlh"/>
+                        <outlet property="resultLabel" destination="NAX-iU-vta" id="kFI-R5-qUg"/>
+                        <outlet property="targetColorBtn" destination="kRE-WJ-wyA" id="gfU-Gc-0Up"/>
+                        <outlet property="targetColorLabel" destination="pSm-OI-cZO" id="i8s-9o-gkC"/>
+                        <outlet property="timer" destination="F0u-9f-v9S" id="drA-c6-hHk"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="437" y="176"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="WatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Sores-->
+        <scene sceneID="sWN-1e-SfY">
+            <objects>
+                <controller identifier="ScoreInterfaceController" title="Sores" id="asw-g5-IVu" customClass="ScoreInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="UaS-qv-XQd">
+                            <items>
+                                <tableRow identifier="TableRowController" id="aJ1-ZV-3ev" customClass="TableRowController" customModule="WatchApp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="MKK-hw-kgV">
+                                        <items>
+                                            <label alignment="left" text="Label" id="ZCe-1O-ii9"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="ZCe-1O-ii9" id="eU7-ag-ySB"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="UaS-qv-XQd" id="aME-Zg-xbF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="453" y="672"/>
+        </scene>
+        <!--SettingsInterfaceController-->
+        <scene sceneID="FiD-OD-zVV">
+            <objects>
+                <controller identifier="SettingsInterfaceController" id="5cu-9S-fHV" customClass="SettingsInterfaceController" customModule="WatchApp_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Set default time:" id="QnN-xl-PAQ"/>
+                        <label alignment="center" text="Label" id="8cq-8O-Zyt">
+                            <color key="textColor" red="0.98431378599999997" green="0.70588237050000002" blue="0.12549020350000001" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                        </label>
+                        <slider width="1" alignment="left" value="3" minimum="3" maximum="60" steps="20" id="UFi-ST-L00">
+                            <connections>
+                                <action selector="sliderValueChanged:" destination="5cu-9S-fHV" id="B4Z-0L-fve"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Save" id="DBa-gr-qyO">
+                            <connections>
+                                <segue destination="kkr-Tp-qO8" kind="push" identifier="settingsBack" id="LxR-aq-rt5"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="timeLabel" destination="8cq-8O-Zyt" id="6le-hr-Qaw"/>
+                        <outlet property="timeSlider" destination="UFi-ST-L00" id="DlH-bm-kro"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="575" y="455"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="WatchApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LxR-aq-rt5"/>
+    </inferredMetricsTieBreakers>
+</document>
