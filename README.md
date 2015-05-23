@@ -1,19 +1,31 @@
-# Simple-Todo-App-With-Today-Extension
+# 027-Apple-Watch-App-Color-Game
 
-**Description**: a simple todo app with today extension and Apple Watch
-extension. **Features**:
+![][] **Description**: a color game made for Apple Watch.[Source Code][]
+**Features**:
 
--   The App, today extension and Apple Watch extension share the same
-code from custom Framework
--   Share the same data across the app and extensions
--   Open the detail todo item directly from today extension
+-   Easy to play color game, just choose the right matching colors and
+you’ll get a score increase
+-   Use force touch to trigger the menu to stop game, check scores or
+set the playing time
 
-[![snapshot][]![snapshot][1]][snapshot] 
+**Notes**:
 
-**Known issue**: Somehow it
-seems the Apple Watch app does not co-exist with the today extension
-app. It does not run until I delete the today extension. Took me long
-time to realize…
+-   It’s a known problem that the watch app runs quite slowly. I tried
+to incorporate framework, but it just slows down the app a lot. And
+sometimes, it stops at the loading screen.
+-   I also tried to pay a “Show Score” button at the first screen,
+ironically half the time the app will stop at the loading screen. So
+I moved it to settings
+-   I realized that I had some spelling problem with the app, too much
+waiting for the loading screen to change, so I just let it go.
 
-[snapshot]: http://audreyli.me/wp-content/uploads/2015/05/snapshot3.gif
-[1]: http://audreyli.me/wp-content/uploads/2015/05/snapshot4.png
+[![screenshot][]][screenshot] [caption id=“attachment\_862”
+align=“aligncenter” width=“312”][![beautiful\_loading\_screen][]][]
+Beautiful Loading Screen[/caption]
+
+[]: https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game/blob/master/_snapshot/snapshot.gif?raw=true
+[Source Code]: https://github.com/vidaaudrey/027-Apple-Watch-App-Color-Game
+[screenshot]: http://audreyli.me/wp-content/uploads/2015/05/screenshot.png
+[beautiful\_loading\_screen]: http://audreyli.me/wp-content/uploads/2015/05/beautiful_loading_screen.png
+"Beautiful Loading Screen"
+[![beautiful\_loading\_screen][]]: http://audreyli.me/wp-content/uploads/2015/05/beautiful_loading_screen.png
